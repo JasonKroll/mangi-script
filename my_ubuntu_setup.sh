@@ -19,8 +19,8 @@ sudo apt-get install build-essential libssl-dev
 # Nodejs and NVM
 curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
 source ~/.profile
-sudo nvm install 4.2.3
-sudo nvm use 4.2.3
+sudo nvm install 7.10.0
+sudo nvm use 7.10.0
 node -v
 
 # Mongodb, Installing and starting server
@@ -51,7 +51,7 @@ sudo npm install -g yo
 sudo npm install -g gulp-cli
 
 # Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)
-sudo npm install -g generator-angular-fullstack
+# sudo npm install -g generator-angular-fullstack
 
 # Vim, Curl, Python - Some random useful stuff
 sudo apt-get install vim curl python-software-properties
@@ -69,7 +69,7 @@ sudo apt-get install gimp gimp-data gimp-plugin-registry gimp-data-extras
 sudo apt-get install unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
 
 # FileZilla - a FTP client
-sudo apt-get install filezilla
+# sudo apt-get install filezilla
 
 # TLP - saves battery when Ubuntu is installed on Laptops
 sudo apt-get remove laptop-mode-tools
@@ -80,32 +80,38 @@ sudo tlp start
 sudo tlp stat
 
 # Erlang - Actor Concurrency Model based Programming Language
-sudo apt-get install erlang
+# sudo apt-get install erlang
 
 # Sticky Notes
-sudo apt-get install xpad
+# sudo apt-get install xpad
 
 # KVM acceleration and cpu checker
-sudo apt-get install cpu-checker
-sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
-sudo apt-get install virt-manager
-sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+# sudo apt-get install cpu-checker
+# sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+# sudo apt-get install virt-manager
+# sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
 
 # RPM and alien - sometimes used to install software packages
-sudo apt-get install rpm
-sudo apt-get install alien dpkg-dev debhelper
+# sudo apt-get install rpm
+# sudo apt-get install alien dpkg-dev debhelper
 
 # Calibre - Ebook reader and converter
-sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
+# sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 
 # Dictionary Client and Server with Thesaurus
-sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
-sudo apt-get install dict
-sudo apt-get install dictd
-sudo apt-get install dict-gcide
-sudo apt-get install dict-wn
-sudo apt-get install dict-devil
-sudo apt-get install dict-moby-thesaurus
+# sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
+# sudo apt-get install dict
+# sudo apt-get install dictd
+# sudo apt-get install dict-gcide
+# sudo apt-get install dict-wn
+# sudo apt-get install dict-devil
+# sudo apt-get install dict-moby-thesaurus
 
 # For Android Studio (Gradle Daemon)
-touch ~/.gradle/gradle.properties && echo "org.gradle.daemon=true" >> ~/.gradle/gradle.properties
+# touch ~/.gradle/gradle.properties && echo "org.gradle.daemon=true" >> ~/.gradle/gradle.properties
+
+# VS Code
+# sudo add-apt-repository -y "deb https://packages.microsoft.com/repos/vscode stable main"
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF
+# sudo apt update
+# sudo apt -y install code
